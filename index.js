@@ -1,11 +1,31 @@
-function scuberGreetingForFeet(){
+function scuberGreetingForFeet(dist) {
   // Write your code here!
+
+  if (dist <= 400) {
+    return "This one is on me!";
+  }
+
+  if (dist > 2000 && dist < 2500) {
+    return "I will gladly take your thirty bucks.";
+  }
+
+  if (dist > 2500) {
+    return "No can do.";
+  }
 }
 
-function ternaryCheckCity(){
+function ternaryCheckCity(dest) {
   // Write your code here!
+  return dest === "NYC" ? "Ok, sounds good." : "No go.";
 }
 
-function switchOnCharmFromTip(){
+function switchOnCharmFromTip(tip) {
   // Write your code here!
+  if (tip == "generous") {
+    return "Thank you so much.";
+  } else if (tip == "not as generous") {
+    return "Thank you.";
+  } else {
+    return "Bye.";
+  }
 }
